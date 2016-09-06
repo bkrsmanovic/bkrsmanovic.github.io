@@ -1,3 +1,10 @@
-p {
-	color: red;
+body {
+	background: #999;
+}
+
+img {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin: 100px auto;
 }
