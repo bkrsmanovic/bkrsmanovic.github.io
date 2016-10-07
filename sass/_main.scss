@@ -1,5 +1,5 @@
 .main-section {
-	padding-top: 120px;
+	padding-top: 100px;
 
 	@media screen and (min-width: 415px) and (max-width: 736px) and (orientation: landscape) {
 		padding-top: 20px;
@@ -12,6 +12,7 @@
 	.main {
 		max-width: 767px;
 		margin: 0 auto;
+		padding: 0 10px;
 
 		a {
 			margin: 20px 0 0;
