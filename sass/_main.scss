@@ -1,0 +1,17 @@
+.main-section {
+	position: absolute;
+	width: 100%;
+	padding: 0 15px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	.main {
+		max-width: 767px;
+		margin: 0 auto;
+
+		a {
+			display: block;
+			margin: 20px 0 0;
+		}
+	}
+}
