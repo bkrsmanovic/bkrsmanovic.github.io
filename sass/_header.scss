@@ -1,26 +1,19 @@
 .header {
 
 	.head {
-		padding-bottom: 20px;
 
 		.title {
 		    overflow: hidden;
-			display: inline-block;
-	    	border-bottom: 1px solid rgba(0, 0, 0, .1);
 
 			h1 {
 				font-weight: 100;
 				margin-bottom: 0;
-			}
-
-			p {
-				text-transform: uppercase;
-				letter-spacing: .055em;
+				margin-top: 15px;
 			}
 		}
 
 		.links {
-			margin: 10px 0 0;
+			margin: 10px;
 
 			a {
 				margin: 0 1em;

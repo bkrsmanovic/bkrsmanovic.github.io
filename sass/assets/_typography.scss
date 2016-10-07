@@ -69,16 +69,28 @@ hr {
 }
 
 a {
+	position: relative;
+	display: inline-block;
 	color: inherit;
 	font-weight: 300;
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: .055em;
-	will-change: color;
-	transition: color .22s;
 
-	&:hover {
-		color: $lighten-3;
+	&::before {
+		position: absolute;
+		display: block;
+		content: '';
+		width: 0;
+		height: 1px;
+		bottom: -5px;
+		left: 0;
+		background: rgba(0, 0, 0, .4);
+		will-change: width;
+		transition: width .22s;
+	}
 
+	&:hover::before {
+		width: 100%;
 	}
 }

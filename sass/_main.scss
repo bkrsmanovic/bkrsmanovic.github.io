@@ -1,17 +1,21 @@
 .main-section {
-	position: absolute;
-	width: 100%;
-	padding: 0 15px;
-	top: 50%;
-	transform: translateY(-50%);
+	padding-top: 120px;
+
+	@media screen and (min-width: 415px) and (max-width: 736px) and (orientation: landscape) {
+		padding-top: 20px;
+	}
+
+	@media screen and (min-width: $large-screen) {
+		padding-top: 200px;
+	}
 
 	.main {
 		max-width: 767px;
 		margin: 0 auto;
 
 		a {
-			display: block;
 			margin: 20px 0 0;
+			font-size: 120%;
 		}
 	}
 }
