@@ -1,13 +1,10 @@
 .main-section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    height: calc(100vh - 176px);
+	flex: 1;
 
 	.main {
 		max-width: 767px;
 		margin: 0 auto;
-		padding: 0 10px;
+		padding: 50px 10px 0;
 
 		a {
 			margin: 20px 0 0;

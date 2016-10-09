@@ -1,6 +1,8 @@
 body {
-	font-family: "Roboto", sans-serif;
-	font-size: 13px;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	font: 13px/1.1 "Roboto", sans-serif;
 }
 
 h1,
@@ -11,7 +13,6 @@ h5,
 h6,
 p {
 	font-weight: 300;
-	line-height: 1.1;
 	margin-top: 0;
 	margin-bottom: .5rem;
 }
@@ -93,4 +94,21 @@ a {
 	&:hover::before {
 		width: 100%;
 	}
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	// height: 100%;
+
+    p {
+        margin: 0;
+    }
+    ul {
+        text-align: center;
+        li {
+            margin-bottom: 1rem;
+        }
+    }
 }
