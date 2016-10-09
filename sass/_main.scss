@@ -4,6 +4,17 @@
 	align-items: center;
     height: calc(100vh - 176px);
 
+	.main {
+		max-width: 767px;
+		margin: 0 auto;
+		padding: 0 10px;
+
+		a {
+			margin: 20px 0 0;
+			font-size: 120%;
+		}
+	}
+
 	@media screen and (min-width: 415px) and (max-width: 736px) and (orientation: landscape) {
 
 		.main {
@@ -15,18 +26,6 @@
 			a {
 				margin-top: 0;
 			}
-		}
-	}
-
-
-	.main {
-		max-width: 767px;
-		margin: 0 auto;
-		padding: 0 10px;
-
-		a {
-			margin: 20px 0 0;
-			font-size: 120%;
 		}
 	}
 }
