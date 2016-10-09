@@ -2,27 +2,59 @@
 
 	.head {
 
-		.title {
-		    overflow: hidden;
+		h1 {
+			font-size: 2.2rem;
+			font-weight: 100;
+			margin-bottom: 0;
+			margin-top: 15px;
+		}
+	}
 
-			h1 {
-				font-size: 2.2rem;
+	.links {
+		margin: 10px;
+
+		a {
+			margin: 0 1em;
+
+			&:first-child {
+				color: $lighten-5;
+				pointer-events: none;
+				cursor: default;
+			}
+		}
+	}
+
+	&.c-header {
+
+		h1 {
+
+			a {
+				letter-spacing: normal;
 				font-weight: 100;
-				margin-bottom: 0;
-				margin-top: 15px;
+
+				&::before {
+					display: none;
+				}
 			}
 		}
 
-		.links {
-			margin: 10px;
+		.links a:last-child {
+			pointer-events: none;
+			color: $lighten-5;
+			cursor: default;
+		}
+	}
+
+	&.h-header {
+
+		h1 {
 
 			a {
-				margin: 0 1em;
+				letter-spacing: normal;
+				font-weight: 100;
 
-				&:first-child {
-					color: $lighten-5;
-					pointer-events: none;
-					cursor: default;
+				&::before {
+					display: none;
 				}
 			}
 		}

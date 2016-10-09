@@ -4,11 +4,142 @@
 	.main {
 		max-width: 767px;
 		margin: 0 auto;
-		padding: 50px 10px;
+		padding: 3.5em 1em;
 
 		a {
 			margin: 20px 0 0;
-			font-size: 120%;
+			font-size: 150%;
+		}
+	}
+
+	&.c-main-section {
+
+		.main {
+
+			h4 {
+
+				&:first-child {
+					margin-bottom: 2em;
+				}
+
+				mark {
+					background: inherit;
+					color: #0b0b46;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+
+	&.h-main-section {
+
+		form {
+			max-width: 50em;
+			width: 100%;
+			margin: 0 auto;
+
+			.form-control {
+
+				&:first-child,
+				&:last-child {
+					@include clearfix;
+				}
+
+				margin-bottom: 20px;
+
+				input[type='text'],
+				input[type='email'],
+				textarea {
+					border: 0;
+					border-bottom: 1px solid #999;
+					font: 13px/1.1 "Roboto", sans-serif;
+				    font-weight: 300;
+					transition: border-bottom-color .2s;
+
+					&:focus {
+						border-bottom-color: #444;
+					}
+				}
+
+				input[type='text'],
+				input[type='email'] {
+					display: block;
+					width: 100%;
+					padding: 5px 0;
+
+					&:first-child {
+						margin-bottom: 20px;
+					}
+
+
+					@media screen and (min-width: $small-screen) {
+						float: left;
+						width: calc(50% - 15px);
+
+						&:first-child {
+							margin-right: 15px;
+							margin-bottom: 0;
+						}
+
+						&:last-child {
+							margin-left: 15px;
+						}
+					}
+
+				}
+
+				textarea {
+					width: 100%;
+					resize: none;
+					transition: height .3s cubic-bezier(0, 1, .5, 1);
+					height: 25px;
+
+					&:focus {
+						height: 200px;
+					}
+
+					&.focus {
+						height: 200px;
+					}
+				}
+
+				input[type="submit"] {
+					min-width: 100px;
+					float: right;
+					font: 13px/1.1 "Roboto", sans-serif;
+					font-weight: 300;
+					transition: border-color .2s, background .2s;
+					border-color: #999;
+					padding: 5px 7px;
+					cursor: pointer;
+					border: 1px solid #999;
+					background: #fff;
+
+					&:hover {
+						border-color: #444;
+					}
+
+					&:active {
+						background: darken(#fff, 5%);
+					}
+				}
+			}
+		}
+	}
+
+	.main {
+
+		h5 {
+			margin-bottom: 20px;
+		}
+
+		p {
+
+			mark {
+				background: inherit;
+				color: #0b0b46;
+				font-weight: 500;
+			}
 		}
 	}
 }
