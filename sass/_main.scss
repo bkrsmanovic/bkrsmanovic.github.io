@@ -6,8 +6,15 @@
 
 	@media screen and (min-width: 415px) and (max-width: 736px) and (orientation: landscape) {
 
-		.main h4 {
-			font-size: 1rem;
+		.main {
+
+			h4 {
+				font-size: 1rem;
+			}
+
+			a {
+				margin-top: 0;
+			}
 		}
 	}
 

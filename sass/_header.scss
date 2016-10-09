@@ -26,4 +26,11 @@
 			}
 		}
 	}
+
+	@media screen and (min-width: 415px) and (max-width: 736px) and (orientation: landscape) {
+
+		.head .links {
+			margin: 0;
+		}
+	}
 }
