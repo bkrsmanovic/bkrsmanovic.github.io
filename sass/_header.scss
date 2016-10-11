@@ -3,10 +3,20 @@
 	.head {
 
 		h1 {
-			font-size: 2.2rem;
+			font-size: 2rem;
 			font-weight: 100;
 			margin-bottom: 0;
 			margin-top: 15px;
+
+			a {
+				letter-spacing: normal;
+				font-weight: 100;
+				color: #0b0b46;
+
+				&::before {
+					display: none;
+				}
+			}
 		}
 	}
 
@@ -15,48 +25,6 @@
 
 		a {
 			margin: 0 1em;
-
-			&:first-child {
-				color: $lighten-5;
-				pointer-events: none;
-				cursor: default;
-			}
-		}
-	}
-
-	&.c-header {
-
-		h1 {
-
-			a {
-				letter-spacing: normal;
-				font-weight: 100;
-
-				&::before {
-					display: none;
-				}
-			}
-		}
-
-		.links a:last-child {
-			pointer-events: none;
-			color: $lighten-5;
-			cursor: default;
-		}
-	}
-
-	&.h-header {
-
-		h1 {
-
-			a {
-				letter-spacing: normal;
-				font-weight: 100;
-
-				&::before {
-					display: none;
-				}
-			}
 		}
 	}
 }

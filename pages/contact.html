@@ -17,17 +17,33 @@
 	<div class="head">
 			<h1><a href="../">Bojan Krsmanović</a></h1>
 		<div class="links">
-			<a href="#">Portfolio</a><a href="#">Contact Me</a>
+			<a target="_blank" href="http://codepen.io/bojankrsmanovic">Codepen (portfolio)</a>
 		</div>
 	</div>
 </header>
 
-<section id="main-section" class="main-section c-main-section">
+<section id="main-section" class="main-section">
 	<div class="main">
-		<h4>If you have any question, or need an advice about website, feel free to ask, I will gladly help you out, free of charge. ;)</h4>
-		<h4>Phone: <mark>+381/64-0800-390</mark></h4>
-		<h4>E-mail: <mark>bojankrsmanovic480@gmail.com</mark></h4>
-		<a href="./hire-me.html">Hire Me</a>
+		<!-- <h5>Popunite kontakt formu sa Vašim osnovnim informacijama (e-mail i telefon moraju biti tačni). Nakon toga, ja ću Vas u vrlo kratkom roku kontaktirati sa daljim informacijama.</h5> -->
+		<h5>Send me basic information about what you need, and I will contact you with further instructions.</h5>
+		<form id="form" action="//formspree.io/bojankrsmanovic480@gmail.com" method="post">
+			<div class="form-control">
+				<input type="text" name="name" id="name" placeholder="Ime" required>
+				<input type="text" name="phone" id="email" placeholder="Broj telefona" required>
+			</div>
+			<div class="form-control">
+				<input type="email" name="_replyto" id="phone" placeholder="E-mail" required>
+				<textarea name="message" id="msg" placeholder="Vaša poruka" required></textarea>
+			</div>
+			<div class="form-control">
+				<input type="submit" id="submit" placeholder="Send" value="Send">
+			</div>
+		</form>
+		<!-- <h5>ili, ukoliko želite, kontaktirajte me direktno preko telefona ili e-maila:</h5> -->
+		<h5>or, if you like, contact me via Phone or E-mail:</h5>
+		<!-- <p>Telefon: <mark>+381/64-0800-390</mark></p> -->
+		<p>Phone: <mark>+381/64-0800-390</mark></p>
+		<p>E-mail: <mark>bojankrsmanovic480@gmail.com</mark></p>
 	</div>
 </section>
 
@@ -36,6 +52,9 @@
 		<p>Copyright 2016 - Bojan Krsmanović</p>
 	</div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../javascripts/main.js"></script>
 
 </body>
 </html>
