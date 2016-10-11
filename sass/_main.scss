@@ -119,10 +119,6 @@
 						background: darken(#fff, 5%);
 					}
 				}
-
-				&:last-child {
-					@include clearfix;
-				}
 			}
 		}
 	}

@@ -24,7 +24,7 @@ $contactForm.submit(function(e) {
 		},
 		success: function(data) {
 			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
-			$('.alert--loading').hide();
+			$('.alert--loading').remove();
 			$submit.val('Message sent!');
 			setTimeout(function() {
 				$('.alert--success').remove();
